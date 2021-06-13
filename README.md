@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/faq-accordion-card-using-html-sass-css-grid-and-javascript-k7EJxqoJ-)
-- Live Site URL: [Add live site URL here](https://heuristic-goodall-92ef91.netlify.app)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/faq-accordion-card-using-html-sass-css-grid-and-javascript-k7EJxqoJ-)
+- Live Site URL: [Netlify](https://heuristic-goodall-92ef91.netlify.app)
 
 ## My process
 
