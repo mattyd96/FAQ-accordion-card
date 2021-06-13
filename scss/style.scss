@@ -8,20 +8,105 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+.container {
+    display:grid;
+    grid-template-columns: 3fr 3fr;
+    margin: 10rem auto;
+    max-width: 55rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: .3rem 1.5rem 2rem .5rem rgba($color: #000000, $alpha: .25);
+}
+
+.bg-illustration {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    overflow: hidden;
+
+    img {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .desktop-top {
+        margin: 4.1rem -5.5rem 4.1rem;
+    }
+
+    .desktop-bottom {
+        margin: -18.5rem -36.2rem;
+    }
+
+
+}
+
+.box-illustration {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 100;
+
+    img {
+        margin: 12.3rem -5.8rem 0;
+    }
+}
+
+.mobile-illustration {
+    display: none;
+}
+
+.info {
+    margin: 4rem 2rem;
+    width: 20rem;
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        border-bottom: solid .1rem hsl(240, 5%, 91%);
+    }
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    font-size: .825rem;
+    color: hsl(237, 12%, 33%);
+
+    &:hover {
+        color: hsl(14, 88%, 65%);
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    img {
+        align-self: center;
+    }
+
+}
+
+.answer {
+    padding-right: 1.5rem;
+    color: hsl(240, 6%, 50%);
+    line-height: 1.4rem;
+
+    p {
+        margin-top: 0;
+    }
+}
 
 @media(max-width: 800px)
 {
+    .bg-illustration,
+    .box-illustration {
+        display: none;
+    }
     .container {
-        display: grid;
+        grid-template-columns: 1fr;
         max-width: 21rem;
-        margin:auto;
-        margin-top: 10rem;
-        background-color: #fff;
-        border-radius: 1rem;
-        box-shadow: .3rem 1.5rem 2rem .5rem rgba($color: #000000, $alpha: .25);
     }
     
-    .mobile-container {
+    .mobile-illustration{
         display: grid;
     
         img {
@@ -40,43 +125,14 @@ body {
     }
     
     .info {
+        margin: 0;
+        width: auto;
         padding: 1rem 1.5rem 3rem 1.5rem;
     
         h1 {
             text-align: center;
-            font-size: 2rem;
         }
     
-        .card {
-            border-bottom: solid .1rem hsl(240, 5%, 91%);
-        }
-    }
-    
-    .question {
-        display: flex;
-        justify-content: space-between;
-        font-size: .825rem;
-        color: hsl(237, 12%, 33%);
-    
-        &:hover {
-            font-weight: 700;
-            cursor: pointer;
-        }
-    
-        img {
-            align-self: center;
-        }
-    
-    }
-    
-    .answer {
-        padding-right: 1.5rem;
-        color: hsl(240, 6%, 50%);
-        line-height: 1.4rem;
-    
-        p {
-            margin-top: 0;
-        }
     }
 }
 
@@ -87,4 +143,9 @@ body {
 
 .up {
     transform: scaleY(-1);
+}
+
+.focus {
+    font-weight: 700;
+    color: hsl(238, 29%, 16%);
 }
